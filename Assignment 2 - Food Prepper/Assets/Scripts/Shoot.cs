@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Benjamin Schuster
+ * Assignment 2
+ * raycast script for selecting food objects
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

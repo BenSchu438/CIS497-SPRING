@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Benjamin Schuster
+ * Assignment 2
+ * Empty tool for when no buttons are pressed
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

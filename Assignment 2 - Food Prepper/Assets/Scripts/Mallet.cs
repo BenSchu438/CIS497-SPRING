@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Benjamin Schuster
+ * Assignment 2
+ * Mallet tool
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

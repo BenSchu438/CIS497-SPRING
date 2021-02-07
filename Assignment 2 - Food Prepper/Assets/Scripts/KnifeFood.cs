@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Benjamin Schuster
+ * Assignment 2
+ * Put on foods used by Knives
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

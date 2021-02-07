@@ -35,66 +35,66 @@ namespace StrategyPattern
 
 
             //Part 2: a polymorphic array of enemies each attack
-            /*
-            enemies[0] = new EnemyBoxer();
-            enemies[1] = new EnemyRobot();
-            enemies[2] = new EnemySpider();
-            enemies[3] = new EnemyBoxer();
-            enemies[4] = new EnemySpider();
 
-            //the next line causes an index out of bounds exception because the index ranges from 0 to 4
-            //enemies[5] = new EnemyRobot();
+            //enemies[0] = new EnemyBoxer();
+            //enemies[1] = new EnemyRobot();
+            //enemies[2] = new EnemySpider();
+            //enemies[3] = new EnemyBoxer();
+            //enemies[4] = new EnemySpider();
 
-            foreach (Enemy enemy in enemies)
-            {
-                if(enemy == null) { break; }
+            ////the next line causes an index out of bounds exception because the index ranges from 0 to 4
+            ////enemies[5] = new EnemyRobot();
 
-                enemy.DoAttack();
-            }
-            */
+            //foreach (Enemy enemy in enemies)
+            //{
+            //    if (enemy == null) { break; }
+
+            //    enemy.DoAttack();
+            //}
+
 
             //Part 3: a polymorphic list of enemies each attack
 
-            /*
-                        //Add 9 enemies to the list
-                        for (int i = 0; i < 3; i++)
-                        {
-                            enemiesList.Add(new EnemyBoxer());
-                            enemiesList.Add(new EnemyRobot());
-                            enemiesList.Add(new EnemySpider());
-                        }
 
-                        //The List size expands and contracts as needed, 
-                        //so adding more will not cause an index out of bounds exception
-                        enemiesList.Add(new EnemyRobot());
+            //Add 9 enemies to the list
+            for (int i = 0; i < 3; i++)
+            {
+                enemiesList.Add(new EnemyBoxer());
+                enemiesList.Add(new EnemyRobot());
+                enemiesList.Add(new EnemySpider());
+            }
 
-                        //Remove enemy at index position 9
-                        enemiesList.RemoveAt(9);
+            //The List size expands and contracts as needed, 
+            //so adding more will not cause an index out of bounds exception
+            enemiesList.Add(new EnemyRobot());
 
-                        //Remove the 3 enemies at positions 6-8
-                        enemiesList.RemoveRange(6, 3);
+            //Remove enemy at index position 9
+            enemiesList.RemoveAt(9);
 
-                        //make a list of attacks
-                        List<IAttackBehavior> attacks = new List<IAttackBehavior>();
-                        attacks.Add(new AttackBite());
-                        attacks.Add(new AttackLaser());
-                        attacks.Add(new AttackPunch());
+            //Remove the 3 enemies at positions 6-8
+            enemiesList.RemoveRange(6, 3);
 
-                        //change the attack behavior of each enemy in the list of enemies to a random attack
-                        foreach (Enemy enemy in enemiesList)
-                        {
-                            if (enemy == null) { continue; }
+            //make a list of attacks
+            List<IAttackBehavior> attacks = new List<IAttackBehavior>();
+            attacks.Add(new AttackBite());
+            attacks.Add(new AttackLaser());
+            attacks.Add(new AttackPunch());
 
-                            enemy.AttackBehavior = attacks[Random.Range(0,attacks.Count)];
-                        }
+            //change the attack behavior of each enemy in the list of enemies to a random attack
+            foreach (Enemy enemy in enemiesList)
+            {
+                if (enemy == null) { continue; }
 
-                        //make each enemy attack
-                        foreach (Enemy enemy in enemiesList)
-                        {
-                            if (enemy == null) { continue; }
-                            enemy.DoAttack();
-                        }
-            */
+                enemy.AttackBehavior = attacks[Random.Range(0, attacks.Count)];
+            }
+
+            //make each enemy attack
+            foreach (Enemy enemy in enemiesList)
+            {
+                if (enemy == null) { continue; }
+                enemy.DoAttack();
+            }
+
 
         }
 

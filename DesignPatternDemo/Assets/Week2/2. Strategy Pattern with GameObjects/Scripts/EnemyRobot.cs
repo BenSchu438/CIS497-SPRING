@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace StrategyPatternWithGameObjects
 {
-    public class EnemyRobot : Enemy
+    public class EnemyRobot : Enemy, IDestroyable
     {
         //Now that Enemy extends Monobehavior,
         //it is better to use Awake() than a constructor

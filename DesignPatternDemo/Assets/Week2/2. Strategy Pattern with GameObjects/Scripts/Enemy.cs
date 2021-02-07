@@ -27,7 +27,7 @@ namespace StrategyPatternWithGameObjects
 
         //Unlike interfaces, abstract classes can have concrete methods
         //These concrete methods are inherited by sub-classes
-        public void speak() { Debug.Log("I'm an enemy. Fear me!"); }
+        public void Speak() { Debug.Log("I'm an enemy. Fear me!"); }
 
         public void Update()
         {

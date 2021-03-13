@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 90e642902e20a1240868393db0b7f162
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - weakZom: {fileID: 6097020752415631297, guid: 577893fceb9a3944d98327cccfe1d398, type: 3}
+  - normZom: {fileID: 1588310154057499828, guid: 28b2eb0c57e78054dbc5ecd0c0bb0033, type: 3}
+  - eliteZom: {fileID: 4070567302818845136, guid: 2e27983f8a60922449d2572b255edcbd, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

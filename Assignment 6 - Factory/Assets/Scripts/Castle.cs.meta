@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f1bf23b55a123824e965145f32f5bfc2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - weakVamp: {fileID: 4855458240969819546, guid: 34522a8c24fdd884d91a286fd66f5356, type: 3}
+  - normVamp: {fileID: 3288954627942797924, guid: 1658ef5b4854df840bcb559b8b46db3e, type: 3}
+  - eliteVamp: {fileID: 8652063942919946457, guid: ebfe635e6afb18e4685981b50382cf80, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

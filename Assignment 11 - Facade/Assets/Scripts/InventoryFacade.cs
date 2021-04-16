@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Benjamin Schuster
+ * Assignment 11
+ * Facade for all inventory tools
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,19 +24,22 @@ public class InventoryFacade : MonoBehaviour
     {
         if(!working)
         {
-            StartCoroutine(Work());
+            
             if (flashlight.GetStatus() == "Off")
             {
+                StartCoroutine(Work());
                 flashlight.WarmingUp();
             }
 
             if (tracker.GetStatus() == "Off")
             {
+                StartCoroutine(Work());
                 tracker.EnablingTracker();
             }
 
             if (radio.GetStatus() == "Off")
             {
+                StartCoroutine(Work());
                 radio.OpenConnection();
             }
         }
@@ -42,20 +50,22 @@ public class InventoryFacade : MonoBehaviour
     {
         if(!working)
         {
-            StartCoroutine(Work());
-
+            
             if (flashlight.GetStatus() == "On")
             {
+                StartCoroutine(Work());
                 flashlight.ShuttingDown();
             }
 
             if (tracker.GetStatus() == "On")
             {
+                StartCoroutine(Work());
                 tracker.DisableingTracker();
             }
 
             if (radio.GetStatus() == "On")
             {
+                StartCoroutine(Work());
                 radio.CloseConnection();
             }
         }
@@ -67,7 +77,6 @@ public class InventoryFacade : MonoBehaviour
     {
         if(!working)
         {
-            StartCoroutine(Work());
             if (flashlight.GetStatus() == "On")
             {
                 flashlight.EmergencyShutoff();

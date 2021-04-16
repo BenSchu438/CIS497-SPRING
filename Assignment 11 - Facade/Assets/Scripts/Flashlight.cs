@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Benjamin Schuster
+ * Assignment 11
+ * Flashlight System
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

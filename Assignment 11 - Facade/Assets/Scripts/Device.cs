@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Benjamin Schuster
+ * Assignment 11
+ * abstract device class
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,7 +49,11 @@ public abstract class Device : MonoBehaviour
                 charge -= drainRate;
 
                 if(charge <= 0)
-                    SetStatus("Dead"); 
+                {
+                    Off();
+                    SetStatus("Dead");
+                }
+                    
                 else
                     yield return new WaitForSeconds(3f);
             }
